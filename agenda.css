@@ -1,0 +1,131 @@
+body{
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: rgb(33, 33, 33);
+}
+.main{
+position: relative;
+  margin: 0;
+  padding: 0;
+min-height: 100vh;
+min-width: 100vw;
+background-image: linear-gradient(180deg, rgba(0, 0, 0, .57), #222), url("https://cdn.pixabay.com/photo/2013/09/18/17/10/woods-183519_1280.jpg");
+background-position: 0px 0px, 38% 50%;
+background-size: auto, cover;
+  background-repeat:no-repeat;
+
+}
+.content1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main h1{
+margin: 0;
+color: #fff;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.main a{
+text-decoration: none;
+}
+.main h2{
+  transition: all 200ms ease;
+      font-family: 'Lato', sans-serif;
+      color: #00d6b4;
+
+      line-height: 19px;
+      font-weight: 300;
+      text-transform: uppercase;
+}
+.main h2:hover{
+color: white;
+}
+#content2 h1{
+color: white;
+margin: 0;
+letter-spacing: 10px;
+}
+#content2 p{
+font-size: 20px;
+margin: 50px 50px 0;
+text-align: left;
+color: #f1d1d1;
+}
+#content2 ul{
+font-size: 20px;
+color: #f1d1d1;
+margin:20px 50px;
+text-align: left;
+
+}
+li{
+line-height: 50px;
+}
+.images{
+display: grid;
+margin: 50px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.images img{
+border: 1px solid grey;
+padding: 10px;
+}
+.images img:hover{
+border-radius: 4px;
+border: 2px solid;
+border-color:#00d6b4;
+}
+.last{
+position: absolute;
+color:#f1d1d1;
+letter-spacing: 1px;
+width: 50%;
+left: 50%;
+line-height: 20px;
+transform: translateX(-50%);
+}
+
+.last-h1{ text-align: left;
+position: absolute;
+font-size: 100px;
+margin:240px 50px 50px;
+color: #00a1ab;
+width: 50%;
+}
+.last-img{
+position: absolute;
+right: 50px;
+margin-top: 260px;
+}
+@media screen and (max-width: 1200px){
+.images img{
+margin-top: 50px;
+width: 80%;
+}
+.images{
+margin: 80px;
+grid-template-columns: 1fr 1fr;
+}
+.last-h1{
+font-size: 80px;
+}
+.last-img{
+width:40%;
+}
+}
+@media screen and (max-width: 600px){
+  .images{
+  margin: 80px;
+  grid-template-columns: 1fr;
+margin: 50px;
+  }
+.last-h1{
+font-size: 40px;
+margin-left: 20px;
+margin-right: 20px;
+}
+}
